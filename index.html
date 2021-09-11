@@ -1,48 +1,88 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style>
-        
-        body {
-            background-color:lightblue;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            height: 100vh;
-            min-height: 100vh;
-        }
-
-        div {
-            margin-top: 15px;
-        }
-
-        .h1 {
-            font-size: xx-large;
-            font-weight: bold;
-        }
-
-        .h2 {
-            font-size: x-large;
-            font-weight: bold;
-        }
-
-        .centered {
-            position: fixed;
-            top: 45%;
-            left: 50%;
-            /* bring your own prefixes */
-            transform: translate(-50%, -50%);
-        }
-        
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sprout Tech</title>
 </head>
-<body>
-    <div class="centered">
-        <div class="h1">Sprout Tech LTD</div>
-        <div>
-            <a href="mailto:contact@sprouttech.co.uk">
-                Contact Us
-            </a>
+<body class="w-full h-full" style="">
+
+    <!--Home Section-->
+    <section id="home" class="w-full h-screen flex flex-col px-4 md:px-28 bg-blue-900 text-blue-200 bg-cover bg-no-repeat bg-left md:bg-center md:bg-auto md:bg-fixed relative">
+        <header class="w-full h-auto py-4 md:py-4 flex items-center">
+            <div class="w-auto h-auto flex items-center">
+                <img class="w-auto h-8 py-px" src="images/logo.png" alt="sprout logo">
+                <span class="text-2xl font-medium tracking-wider ml-4">Sprout</span>
+            </div>
+            <nav class="w-auto h-auto hidden md:flex items-end absolute right-28">
+                <a href="#services" class="rounded-xl py-px px-4 hover:bg-blue-700">Services</a>
+                <a href="#about" class="ml-4 rounded-xl py-px px-4 hover:bg-blue-700">About</a>
+            </nav>
+            <button id="btmenu" class="md:hidden absolute right-6">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+        </header>
+        <span class="w-full h-full mb-28 flex items-center text-5xl font-medium tracking-widest tex-blue-100 z-1">Making life simple</span>
+        <footer class="w-2/3 h-28 hidden md:flex -ml-20 absolute right-0 bottom-0 bg-blue-700 rounded-tl-full"> 
+            <div class="w-auto h-full flex justify-center items-center font-light text-body">
+                <p class="w-1/2 font-light text-sm tracking-wide">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
+                <div class="ml-6">
+                    <p>CONTACT US</p>
+                    <a href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <!--Service Section-->
+    <section id="services" class="w-full h-screen px-4 md:px-28 bg-white relative">
+        <img class="w-1/3 h-auto hidden md:flex absolute -top-1 left-0 border-none" src="images/img-service.png" alt="">
+        <section class="w-full h-auto flex justify-end mb-16">
+            <div class="hidden md:invisible w-1/2"></div>
+            <div class="w-full md:w-1/2 h-auto flex flex-col place-content-end">
+                <h2 class="mt-12 font-medium text-5xl tracking-wider">Digital solutions to optimize your business</h2>
+                <p class="mt-6 font-normal text-lg tracking-wide text-left">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
+                    quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error? <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
+                    quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error?
+                </p>
+            </div>
+        </section>
+        <div class="w-full h-auto flex justify-end items-center space-x-2 md:space-x-12">
+            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
+            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
+            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
+            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
         </div>
-    </div>
+    </section>
+
+    <!--Outinsourcing Section-->
+    <section class="w-full h-screen bg-white ">
+        <aside >
+            <img src="" alt="">
+        </aside>
+        <section>
+
+        </section>
+    </section>
+
+    <!--About Section-->
+    <section id="about" class="w-full h-screen bg-blue-900">
+        <aside class="w-1/3">
+            <img  src="" alt="">
+        </aside>
+        <section>
+
+        </section>
+    </section>
+    
+    <footer class="w-full h-20 bg-blue-700">
+
+    </footer>
 </body>
 </html>
