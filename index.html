@@ -5,84 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assents/style.css">
     <title>Sprout Tech</title>
 </head>
-<body class="w-full h-full" style="">
+<body class="w-full h-full md:flex">
 
-    <!--Home Section-->
-    <section id="home" class="w-full h-screen flex flex-col px-4 md:px-28 bg-blue-900 text-blue-200 bg-cover bg-no-repeat bg-left md:bg-center md:bg-auto md:bg-fixed relative">
-        <header class="w-full h-auto py-4 md:py-4 flex items-center">
-            <div class="w-auto h-auto flex items-center">
-                <img class="w-auto h-8 py-px" src="images/logo.png" alt="sprout logo">
-                <span class="text-2xl font-medium tracking-wider ml-4">Sprout</span>
-            </div>
-            <nav class="w-auto h-auto hidden md:flex items-end absolute right-28">
-                <a href="#services" class="rounded-xl py-px px-4 hover:bg-blue-700">Services</a>
-                <a href="#about" class="ml-4 rounded-xl py-px px-4 hover:bg-blue-700">About</a>
-            </nav>
-            <button id="btmenu" class="md:hidden absolute right-6">
+    <nav id="menuMobile" class="w-full h-auto flex md:hidden bg-blue-900">
+        <div class="w-full h-ful px-6 py-2 mt-4 flex">
+            <button id="btmenu" class="">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
-        </header>
-        <span class="w-full h-full mb-28 flex items-center text-5xl font-medium tracking-widest tex-blue-100 z-1">Making life simple</span>
-        <footer class="w-2/3 h-28 hidden md:flex -ml-20 absolute right-0 bottom-0 bg-blue-700 rounded-tl-full"> 
-            <div class="w-auto h-full flex justify-center items-center font-light text-body">
-                <p class="w-1/2 font-light text-sm tracking-wide">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
-                <div class="ml-6">
-                    <p>CONTACT US</p>
-                    <a href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
-                </div>
-            </div>
-        </footer>
-    </section>
-    
-    <!--Service Section-->
-    <section id="services" class="w-full h-screen px-4 md:px-28 bg-white relative">
-        <img class="w-1/3 h-auto hidden md:flex absolute -top-1 left-0 border-none" src="images/img-service.png" alt="">
-        <section class="w-full h-auto flex justify-end mb-16">
-            <div class="hidden md:invisible w-1/2"></div>
-            <div class="w-full md:w-1/2 h-auto flex flex-col place-content-end">
-                <h2 class="mt-12 font-medium text-5xl tracking-wider">Digital solutions to optimize your business</h2>
-                <p class="mt-6 font-normal text-lg tracking-wide text-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
-                    quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error? <br>
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
-                    quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error?
-                </p>
-            </div>
-        </section>
-        <div class="w-full h-auto flex justify-end items-center space-x-2 md:space-x-12">
-            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
-            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
-            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
-            <div class="w-40 h-40 p-4 rounded-3xl bg-blue-700">nada</div>
         </div>
-    </section>
+    </nav>
 
-    <!--Outinsourcing Section-->
-    <section class="w-full h-screen bg-white ">
-        <aside >
-            <img src="" alt="">
-        </aside>
-        <section>
+    <aside id="sidemenu" class="w-72 h-screen hidden md:flex fixed bg-blue-900 text-white">
+        <div class="w-full h-full flex flex-col justify-center items-center p-10">
+            <header class="w-full h-3/4 hidden md:flex flex-col items-start ">
+                <img class="w-auto h-16 py-px" src="assents/images/logo.png" alt="sprout logo">
+                <span class="mt-8 font-semibold text-4xl uppercase tracking-wider">Sprout</span>
+                <span class="mt-px font-light text-xs uppercase tracking-widest ">digital solutions</span>
+                <nav class="flex flex-col mt-20 space-y-8 text-xl font-base">
+                    <a href="#home" class="hover:text-yellow-300">Home</a>
+                    <a href="#services" class="hover:text-yellow-300">Services</a>
+                    <a href="#about" class="hover:text-yellow-300">About</a>
+                </nav>
+                
+            </header>
+            <footer class="w-full h-1/4 flex flex-col"> 
+                <p class="text-xs font-light tracking-wide">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
+                <p class="mt-8 text-sm font-light tracking-wide uppercase">CONTACT US</p>
+                <a class="mt-px text-base font-medium tracking-wide text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+            </footer>
+        </div>
+    </aside>
+
+    <main class="w-full h-full md:ml-72 flex flex-col justify-start">
+        <!--Home Section-->
+        <section id="home" class="w-full h-screen px-20 flex flex-col justify-center items-center bg-blue-900">
+            <span class="text-5xl font-medium tracking-widest text-blue-100">Making life simple</span>
 
         </section>
-    </section>
-
-    <!--About Section-->
-    <section id="about" class="w-full h-screen bg-blue-900">
-        <aside class="w-1/3">
-            <img  src="" alt="">
-        </aside>
-        <section>
-
+        <!--Service Section-->
+        <section id="services" class="w-full h-screen flex bg-white">
+            <!--services-->
+            <aside class="w-1/3 h-full">
+                <img class="w-80 h-80" src="assents/images/img-service.png" alt="">
+                <div class="w-full h-full flex justify-center items-center">
+                    <button id="next" class="w-auto h-auto py-2 px-4 rounded-xl bg-blue-500">next</button>
+                    <!--<button id="go" class="w-auto h-auto py-2 px-4 ml-4 rounded-xl bg-blue-500">go</button>-->
+                </div>
+            </aside>
+            <article id="description" class="w-2/3 h-full flex">
+                <div class="w-fullh-full flex flex-col">
+                    <div class="w-auto h-auto mt-10 flex flex-col ml-10 px-10">
+                        <h2 class="font-medium text-5xl tracking-wider">Digital solutions to optimize your business</h2>
+                        <p class="mt-6 font-normal text-lg tracking-wide text-left">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
+                            quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error? <br>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
+                            quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error?
+                        </p>
+                    </div>
+                    <div class="w-full h-auto mt-12 flex justify-center items-center space-x-2 md:space-x-12">
+                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
+                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
+                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
+                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
+                    </div>
+                </div>
+            </article>
+            <!--outsourcing-->
+            <article id="outsourcing" class="hidden w-2/3 h-screen flex text-blue-900">
+                <div class="flex flex-col">   
+                    <h2>test</h2>
+                </div>
+            </article>
         </section>
-    </section>
-    
-    <footer class="w-full h-20 bg-blue-700">
+        <!--About Section-->
+        <section id="about" class="w-full h-screen bg-blue-900">
+            <aside class="w-1/3">
+                <img  src="" alt="">
+            </aside>
+            <section>
 
-    </footer>
+            </section>
+        </section>
+    </main>
+    <script src="assents/main.js"></script>
 </body>
 </html>
