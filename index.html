@@ -10,18 +10,36 @@
 </head>
 <body class="w-full h-full md:flex">
 
+    <div id="togglemenu" class="hidden w-full h-1/2 bg-white">
+        <div class="w-full h-full p-4 flex flex-col justify-center items-center">       
+            <nav class="flex flex-col mt-4 space-y-2 text-lg font-base">
+                <a href="#home" class="hover:text-yellow-300">Home</a>
+                <a href="#services" class="hover:text-yellow-300">Services</a>
+                <a href="#about" class="hover:text-yellow-300">About</a>
+            </nav>
+            <footer class="w-full h-full flex flex-col text-left"> 
+                <p class="mt-12 text-xs font-light tracking-wide uppercase">CONTACT US</p>
+                <a class="mt-px text-sm font-semibold tracking-wide text-blue-900" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+            </footer>
+        </div>
+    </div>
+
     <nav id="menuMobile" class="w-full h-auto flex md:hidden bg-blue-900">
-        <div class="w-full h-ful px-6 py-2 mt-4 flex">
-            <button id="btmenu" class="">
+        <div class="w-full h-auto px-6 py-2 mt-4 flex">
+            <button id="btmenu" class="w-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
+            <div class="w-full flex justify-end items-center">
+                <span class="text-right font-semibold text-xl uppercase tracking-wider text-white">Sprout</span>
+                <img class="w-auto h-8 ml-4" src="assents/images/logo.png" alt="sprout logo">
+            </div>
         </div>
     </nav>
 
     <aside id="sidemenu" class="w-72 h-screen hidden md:flex fixed bg-blue-900 text-white">
         <div class="w-full h-full flex flex-col justify-center items-center p-10">
             <header class="w-full h-3/4 hidden md:flex flex-col items-start ">
-                <img class="w-auto h-16 py-px" src="assents/images/logo.png" alt="sprout logo">
+                <img class="w-auto h-10 py-px" src="assents/images/logo.png" alt="sprout logo">
                 <span class="mt-8 font-semibold text-4xl uppercase tracking-wider">Sprout</span>
                 <span class="mt-px font-light text-xs uppercase tracking-widest ">digital solutions</span>
                 <nav class="flex flex-col mt-20 space-y-8 text-xl font-base">
@@ -32,8 +50,8 @@
                 
             </header>
             <footer class="w-full h-1/4 flex flex-col"> 
-                <p class="text-xs font-light tracking-wide">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
-                <p class="mt-8 text-sm font-light tracking-wide uppercase">CONTACT US</p>
+                <p class="text-xs font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
+                <p class="mt-4 text-sm font-light tracking-wide uppercase">CONTACT US</p>
                 <a class="mt-px text-base font-medium tracking-wide text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
             </footer>
         </div>
@@ -41,55 +59,55 @@
 
     <main class="w-full h-full md:ml-72 flex flex-col justify-start">
         <!--Home Section-->
-        <section id="home" class="w-full h-screen px-20 flex flex-col justify-center items-center bg-blue-900">
+        <section id="home" class="w-full h-screen px-4 md:px-20 flex flex-col justify-center items-center bg-blue-900">
             <span class="text-5xl font-medium tracking-widest text-blue-100">Making life simple</span>
-
         </section>
         <!--Service Section-->
         <section id="services" class="w-full h-screen flex bg-white">
             <!--services-->
-            <aside class="w-1/3 h-full">
+            <aside class="w-1/3 h-full hidden md:flex flex-col">
                 <img class="w-80 h-80" src="assents/images/img-service.png" alt="">
                 <div class="w-full h-full flex justify-center items-center">
                     <button id="next" class="w-auto h-auto py-2 px-4 rounded-xl bg-blue-500">next</button>
                     <!--<button id="go" class="w-auto h-auto py-2 px-4 ml-4 rounded-xl bg-blue-500">go</button>-->
                 </div>
             </aside>
-            <article id="description" class="w-2/3 h-full flex">
+            <article id="description" class="w-full h-full md:w-2/3 md:px-0  flex">
                 <div class="w-fullh-full flex flex-col">
-                    <div class="w-auto h-auto mt-10 flex flex-col ml-10 px-10">
+                    <div class="w-auto h-auto mt-10 flex flex-col md:ml-10 px-4 md:px-10">
                         <h2 class="font-medium text-5xl tracking-wider">Digital solutions to optimize your business</h2>
                         <p class="mt-6 font-normal text-lg tracking-wide text-left">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
-                            quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error? <br>
-                            <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident suscipit libero quidem unde sapiente officiis, 
-                            quibusdam dolorem ad sed illum facere perferendis quam laborum repellat pariatur maxime vitae error?
+                            We are totally focused on bring agile solutions that meet our customers complex and multidimensional needs. 
+                            Considering that value is best built through articulate clear partnerships with our customers – and we act accordingly.
                         </p>
                     </div>
-                    <div class="w-full h-auto mt-12 flex justify-center items-center space-x-2 md:space-x-12">
-                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
-                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
-                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
-                        <div class="w-28 h-28 p-4 rounded-3xl bg-blue-700">test</div>
+                    <div class="w-full h-auto mt-12 flex justify-center items-center space-x-4 md:space-x-12">
+                        <div class="w-24 h-24 p-4 md:w-28 md:h-28 md:p-4 rounded-2xl md:rounded-3xl bg-blue-700">test</div>
+                        <div class="w-24 h-24 p-4 md:w-28 md:h-28 md:p-4 rounded-2xl md:rounded-3xl bg-blue-700">test</div>
+                        <div class="w-24 h-24 p-4 md:w-28 md:h-28 md:p-4 rounded-2xl md:rounded-3xl bg-blue-700">test</div>
                     </div>
                 </div>
             </article>
             <!--outsourcing-->
-            <article id="outsourcing" class="hidden w-2/3 h-screen flex text-blue-900">
-                <div class="flex flex-col">   
-                    <h2>test</h2>
+            <article id="outsourcing" class="hidden w-2/3 h-screen flex">
+                <div class="w-auto h-auto mt-10 flex flex-col ml-10 px-10">   
+                    <h2 class="font-medium text-5xl tracking-wider">Outsourcing Services</h2>
+                    <p class="mt-6 font-normal text-lg tracking-wide text-left">
+                        We outsource high performance developers to handle your information technology 
+                        functions such as software development and software support.
+                    </p>
+                    <p class="mt-6 font-normal text-lg tracking-wide text-left">
+                        Outsourcing will give you access to better skills, price to quality ratio, ease of upscaling your project.
+                    </p>
                 </div>
             </article>
         </section>
         <!--About Section-->
-        <section id="about" class="w-full h-screen bg-blue-900">
-            <aside class="w-1/3">
-                <img  src="" alt="">
-            </aside>
-            <section>
-
-            </section>
+        <section id="about" class="w-full h-screen flex justify-center items-center bg-blue-900">
+            <article>
+                <h2 class="font-semibold text-4xl tracking-wider text-white">Digital solutions</h2>
+                
+            </article>
         </section>
     </main>
     <script src="assents/main.js"></script>
