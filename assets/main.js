@@ -12,12 +12,12 @@ const btMenu = document.querySelector("#btmenu");
  * @param {variable} description -> decription service article
  * @param {variable} outsourcing -> outsourcing service article
  */
-function loadButton (next, description,outsourcing) {
-    next.addEventListener('click', function() {
-        description.classList.toggle('hidden');
-        outsourcing.classList.toggle('hidden');
-    });    
-}
+
+// next.addEventListener('click', function(event) {
+//     description.classList.toggle('hidden');
+//     outsourcing.classList.toggle('hidden');
+// });    
+
 
 
 /**
@@ -26,14 +26,7 @@ function loadButton (next, description,outsourcing) {
  * @param {variable} toggleMenu -> Hidden mobile menu
  * @param {variable} btMenu-> Button for show mobile menu
  */
-function loadToggle (toggleMenu, btMenu) {
-    btMenu.addEventListener('click', function() {
-        toggleMenu.classList.toggle('hidden');
-    });    
-}
-
-
-// Called functions
-loadButton(next, description);
-loadToggle(toggleMenu, btMenu);
+btMenu.addEventListener('click', function() {
+    toggleMenu.classList.toggle('hidden');
+});    
 
