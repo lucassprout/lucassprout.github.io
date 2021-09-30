@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Sprout Tech</title>
 </head>
 <body class="w-full h-full md:flex">
@@ -12,8 +13,8 @@
     <div id="togglemenu" class="hidden w-full h-1/2 bg-white">
         <div class="w-full h-full p-4 flex flex-col justify-center items-center">       
             <nav class="flex flex-col mt-4 space-y-2 text-lg font-base">
-                <a href="#home" class="hover:text-yellow-300">Home</a>
                 <!--
+                <a href="#home" class="hover:text-yellow-300">Home</a>
                 <a href="#services" class="hover:text-yellow-300">Services</a>
                 <a href="#about" class="hover:text-yellow-300">About</a>
                 -->
@@ -31,7 +32,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
             </button>
             <div class="w-full flex justify-end items-center">
-                <span class="text-right font-semibold text-xl uppercase tracking-wider text-white">Sprout</span>
+                <span class="text-right font-semibold text-2xl uppercase tracking-wider text-white">Sprout</span>
                 <img class="w-auto h-8 ml-4" src="assets/images/logo.png" alt="sprout logo">
             </div>
         </div>
@@ -40,7 +41,7 @@
     <aside id="sidemenu" class="w-72 h-screen hidden md:flex fixed bg-blue-900 text-white">
         <div class="w-full h-full flex flex-col justify-center items-center p-10">
             <header class="w-full h-3/4 hidden md:flex flex-col items-start ">
-                <div class="w-full h-auto mt-8 flex items-center">
+                <div class="w-full h-auto flex items-center">
                     <img class="w-auto h-12  py-px" src="assets/images/logo.png" alt="sprout logo">
                     <div class="flex flex-col ml-4">
                         <span class="font-semibold text-4xl uppercase tracking-wider">Sprout</span>
@@ -48,8 +49,8 @@
                     </div>
                 </div>
                 <nav class="w-full h-full space-y-16 flex flex-col text-xl font-base justify-center items-start">
-                    <a href="#home" class="hover:text-yellow-300">Home</a>
                     <!---
+                    <a href="#home" class="hover:text-yellow-300">Home</a>
                     <a href="#services" class="hover:text-yellow-300">Services</a>
                     <a href="#about" class="hover:text-yellow-300">About</a>
                     -->
@@ -57,9 +58,9 @@
                 
             </header>
             <footer class="w-full h-1/4 flex flex-col"> 
-                <p class="text-xs font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
-                <p class="mt-8 text-xs font-thin tracking-wide uppercase">CONTACT US</p>
-                <a class="mt-px text-base font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+                <p class="text-sm font-thin tracking-wide">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
+                <p class="mt-8 text-sm font-thin tracking-wide uppercase">CONTACT US</p>
+                <a class="mt-px text-md font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
             </footer>
         </div>
     </aside>
@@ -68,11 +69,16 @@
 
         <!--Home Section-->
         <section id="home" class="w-full h-screen flex flex-col justify-center items-center bg-blue-900 px-6 sm:px-0">
-            <span class="w-full h-2/3 sm:h-full my-10 flex justify-center items-center text-5xl sm:text-6xl font-medium tracking-widest text-center text-blue-100 lg:text-blue-100">Making life simple</span>
+            <div class="w-full h-2/3 sm:h-full my-10 flex flex-col sm:flex-row justify-center items-center text-5xl sm:text-6xl font-medium tracking-widest text-center text-blue-100 lg:text-blue-100">
+                <span class="mb-6 sm:mb-0 sm:mr-6">Making</span>
+                <span id="txtType" wordsType='["develop","life"]' waitType="3000"></span>
+                <span class="mt-6 sm:mt-0 sm:ml-6">simple</span>
+            </div>
+
             <footer class="w-full h-1/3 flex flex-col sm:hidden text-white items-center"> 
-                <p class="text-xs text-center font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
-                <p class="mt-8 text-xs font-thin tracking-wide uppercase">CONTACT US</p>
-                <a class="mt-px text-base font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+                <p class="text-sm text-center font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
+                <p class="mt-8 text-sm font-thin tracking-wide uppercase">CONTACT US</p>
+                <a class="mt-px text-md font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
             </footer>
         </section>
 
@@ -127,6 +133,6 @@
         -->
         
     </main>
-    <script src="assets/main.js"></script>
+    <script type="module" src="assets/main.js"></script>
 </body>
 </html>
