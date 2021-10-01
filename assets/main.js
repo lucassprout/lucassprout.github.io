@@ -37,12 +37,11 @@ function main () {
 
 function typeEffect () {
 
-    const typeWriter = function (txtElement, words, wait=2000) {
+    const typeWriter = function (txtElement, words) {
         this.txtElement = txtElement;
         this.words = words;
         this.txt = '';
         this.wordIndex = 0;
-        this.wait = parseInt(wait, 10);
         this.type();
         this.isDeleting = false;
     }
@@ -87,18 +86,19 @@ function typeEffect () {
 
         // if word is complete
         if (!this.isDeleting && this.txt === fullTxt) {
-            // Make pause in the end
-            typeSpeed  = this.wait;
+            // Make pause in the end of each
+            typeSpeed  = 2000;
             //Set delete true
-            this.isDeleting = true;
+            this.isDeleting = true; 
+
         } else if (this.isDeleting && this.txt === '') {
             this.isDeleting = false;
             // move to the next word
             this.wordIndex++;
             // pause before start typing
             typeSpeed = 600;
-        }
 
+        }
 
         setTimeout(() => this.type(), typeSpeed)
     }
