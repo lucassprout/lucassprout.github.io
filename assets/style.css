@@ -3,3 +3,22 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+#effectHome {
+    position: fixed;
+    pointer-events: none;
+    background: #ffffff;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0%
+    { transform: scale(0) translateY(0) rotate(0deg); opacity: 0; }
+    10%
+    { opacity: 1;}
+    90%
+    { opacity: 0.5;}
+    100%
+    { transform: scale(1) translateY(-500%) rotate(360deg); opacity: 0; }
+
+}

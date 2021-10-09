@@ -104,9 +104,45 @@ function typeEffect () {
     }
 
 }
-
-
 // Call functions
 main();
 typeEffect();
+
+/**
+ * Initial Sections backgound effect 
+ */
+(function () {
+
+    const colors = [
+        '#f0f600',
+        '#da4167',
+        '#dbe9ee'
+    ]
+
+
+    function createCircle(){
+        const homeSection = document.querySelector('#home');
+        const circle = document.createElement('span');
+        circle.id = 'effectHome';
+        let circleSize = Math.random() * 50;
+
+        circle.style.width = 20 + circleSize + 'px';
+        circle.style.height = 20 + circleSize + 'px';
+        circle.style.borderRadius = '50px';
+        circle.style.top = Math.random() * innerHeight + 'px';
+        circle.style.left = Math.random() * innerWidth + 'px';
+
+        homeSection.appendChild(circle);
+
+        const bg = colors[Math.floor(Math.random()*colors.length)];
+        circle.style.background = bg;
+
+        setTimeout(() =>{
+            circle.remove()
+        }, 2000)
+    }
+    setInterval(createCircle, 150);
+
+})();
+
 
