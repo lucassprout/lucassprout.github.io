@@ -66,22 +66,25 @@
     </aside>
 
     <main class="w-full h-full md:ml-72 flex flex-col">
-
+       
         <!--Home Section-->
-        <section id="home" class="w-full h-screen flex flex-col justify-center items-center bg-blue-900 px-6 sm:px-0">
-            <div class="w-full h-2/3 sm:h-full my-10 flex flex-col sm:flex-row justify-center items-center text-5xl sm:text-6xl font-medium tracking-widest text-center text-blue-100 lg:text-blue-100">
-                <span class="mb-6 sm:mb-0 sm:mr-6">Making</span>
-                <span id="txtType" wordsType='["planning","projects", "delivery", "life"]' waitType="3000"></span>
-                <span class="mt-6 sm:mt-0 sm:ml-6">simple</span>
-            </div>
+        <div id="particles-js" class="w-auto h-screen bg-cover absolute z-3"></div>
+            <section id="home" class="w-full h-screen flex flex-col justify-center items-center bg-blue-900 px-6 sm:px-0">
+                
+                <div class="w-full h-2/3 sm:h-full my-10 flex flex-col sm:flex-row justify-center items-center text-5xl sm:text-6xl font-medium tracking-widest text-center text-blue-100 lg:text-blue-100">
+                    <span class="mb-6 sm:mb-0 sm:mr-6">Making</span>
+                    <span id="txtType" wordsType='["planning","projects", "delivery", "life"]' waitType="3000"></span>
+                    <span class="mt-6 sm:mt-0 sm:ml-6">simple</span>
+                </div>
 
-            <footer class="w-full h-1/3 flex flex-col sm:hidden text-white items-center"> 
-                <p class="text-sm text-center font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
-                <p class="mt-8 text-sm font-thin tracking-wide uppercase">CONTACT US</p>
-                <a class="mt-px text-md font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
-            </footer>
-        </section>
-
+                <footer class="w-full h-1/3 flex flex-col sm:hidden text-white items-center"> 
+                    <p class="text-sm text-center font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
+                    <p class="mt-8 text-sm font-thin tracking-wide uppercase">CONTACT US</p>
+                    <a class="mt-px text-md font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+                </footer>
+                
+            </section>
+        </div>  
         <!--
         <section id="services" class="w-full h-screen flex bg-white">
             
@@ -134,5 +137,7 @@
         
     </main>
     <script type="module" src="assets/main.js"></script>
+    <script  src="assets/particles.js"></script>
+    <script  src="assets/app.js"></script>
 </body>
 </html>
