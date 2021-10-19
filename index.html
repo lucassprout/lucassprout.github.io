@@ -38,53 +38,51 @@
         </div>
     </nav>
 
-    <aside id="sidemenu" class="w-72 h-screen hidden md:flex fixed bg-blue-900 text-white">
-        <div class="w-full h-full flex flex-col justify-center items-center p-10">
-            <header class="w-full h-3/4 hidden md:flex flex-col items-start ">
-                <div class="w-full h-auto flex items-center">
-                    <img class="w-auto h-12  py-px" src="assets/images/logo.png" alt="sprout logo">
-                    <div class="flex flex-col ml-4">
-                        <span class="font-semibold text-4xl uppercase tracking-wider">Sprout</span>
-                        <span class="font-light text-xs uppercase tracking-widest ">digital solutions</span>
+    
+    <main class="w-full h-screen flex flex-col">
+        
+        <header  class="w-full h-auto hidden sm:flex fixed bg-blue-900 text-white">
+            <div class="w-full h-full flex flex-col justify-center items-center px-10 py-6">
+                <section class="w-full h-3/4 hidden md:flex flex-col items-start ">
+                    <div class="w-full h-auto flex items-center">
+                        <img class="w-auto h-12  py-px" src="assets/images/logo.png" alt="sprout logo">
+                        <div class="flex flex-col ml-4">
+                            <span class="font-semibold text-4xl uppercase tracking-wider">Sprout</span>
+                            <span class="font-light text-xs uppercase tracking-widest ">digital solutions</span>
+                        </div>
                     </div>
-                </div>
-                <nav class="w-full h-full space-y-16 flex flex-col text-xl font-base justify-center items-start">
-                    <!---
-                    <a href="#home" class="hover:text-yellow-300">Home</a>
-                    <a href="#services" class="hover:text-yellow-300">Services</a>
-                    <a href="#about" class="hover:text-yellow-300">About</a>
-                    -->
-                </nav>
-                
-            </header>
-            <footer class="w-full h-1/4 flex flex-col"> 
-                <p class="text-sm font-thin tracking-wide">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
-                <p class="mt-8 text-sm font-thin tracking-wide uppercase">CONTACT US</p>
-                <a class="mt-px text-md font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
-            </footer>
-        </div>
-    </aside>
+                    <nav class="w-full h-full space-y-16 flex flex-col text-xl font-base justify-center items-start">
+                        <!---
+                        <a href="#home" class="hover:text-yellow-300">Home</a>
+                        <a href="#services" class="hover:text-yellow-300">Services</a>
+                        <a href="#about" class="hover:text-yellow-300">About</a>
+                        -->
+                    </nav>
+                </section>
+            </div>
+        </header>
 
-    <main class="w-full h-full md:ml-72 flex flex-col">
-       
         <!--Home Section-->
-        <div id="particles-js" class="w-auto h-screen bg-cover absolute z-3"></div>
-            <section id="home" class="w-full h-screen flex flex-col justify-center items-center bg-blue-900 px-6 sm:px-0">
+        <div id="particles-js" class="w-screen h-screen bg-cover absolute z-4"></div>
+            <section id="home" class="w-screen h-screen flex flex-col justify-center items-center bg-blue-900 px-6 sm:px-0 z-1">
                 
-                <div class="w-full h-2/3 sm:h-full my-10 flex flex-col sm:flex-row justify-center items-center text-5xl sm:text-6xl font-medium tracking-widest text-center text-blue-100 lg:text-blue-100">
+                <div class="w-full h-screen flex flex-col sm:flex-row justify-center items-center text-5xl sm:text-6xl font-medium tracking-widest text-center text-blue-100 lg:text-blue-100">
                     <span class="mb-6 sm:mb-0 sm:mr-6">Making</span>
                     <span id="txtType" wordsType='["planning","projects", "delivery", "life"]' waitType="3000"></span>
                     <span class="mt-6 sm:mt-0 sm:ml-6">simple</span>
                 </div>
 
-                <footer class="w-full h-1/3 flex flex-col sm:hidden text-white items-center"> 
-                    <p class="text-sm text-center font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
-                    <p class="mt-8 text-sm font-thin tracking-wide uppercase">CONTACT US</p>
-                    <a class="mt-px text-md font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+                <footer class="w-full sm:w-1/2 h-auto py-4 mb-10 sm:mb-0 sm:flex justify-center items-center sm:self-start sm:ml-10 text-white"> 
+                    <p class="text-sm text-center sm:text-left font-thin tracking-widest">To find out more about how Sprout can help your business, drop us an email and someone will get in touch.</p>
+                    <div class="text-center mt-4 sm:text-left sm:mt-0">
+                        <p class="text-sm font-thin tracking-wide uppercase">CONTACT US</p>
+                        <a class="mt-px text-md font-normal tracking-wider text-yellow-300" href="mailto:contact@sprouttech.co.uk">contact@sprouttech.co.uk</a>
+                    </div>
                 </footer>
                 
             </section>
         </div>  
+
         <!--
         <section id="services" class="w-full h-screen flex bg-white">
             
